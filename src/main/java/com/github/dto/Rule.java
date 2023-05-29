@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class Rule {
-    public String rule;
+    String name;
 }

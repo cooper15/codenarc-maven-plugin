@@ -19,7 +19,7 @@ public class Verify {
             codeAnalyzer.setIncludes(parameter.getIncludes());
 
             String rules = parameter.getRules().stream()
-                    .map(rule -> "rulesets/" + rule)
+                    .map(rule -> "rulesets/" + rule + ".xml")
                     .collect(Collectors.joining(", "));
 
             CodeNarcRunner runner = new CodeNarcRunner();
